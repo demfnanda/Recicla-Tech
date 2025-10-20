@@ -179,6 +179,140 @@
     }
   }
 
+  //COMO FUNCIONA SESSION 3
+
+  .session3-comofunciona{
+  text-align: center;
+  padding: 4rem 8%;
+  background-color: #fff;
+
+    h2 {
+     font-size: 2.2rem;
+     font-family: 'Poppins', sans-serif;
+     text-align: start;
+     font-weight: 700;
+     color: #1a1a1a;
+     margin-bottom: 0.5rem;
+    }
+    .subtitulo{
+      font-size: 1.2rem;
+      font-family: 'Inter', sans-serif;
+      text-align: start;
+      color: #555;
+      margin-bottom: 3rem;
+    }
+
+    .cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem; // espaço entre os cards
+    flex-wrap: wrap; // permite quebrar linha em telas pequenas
+    }
+  
+  }
+
+// Estilo de cada Card
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #F3F5F8;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 481px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  h3 {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 0.6rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    margin-bottom: 1.8rem;
+  }
+
+  .itenscard {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    .numbercard {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      justify-content:center;
+    }
+
+    .numbergreen {
+      background-color: #22c55e;
+    }
+
+    .numberblue {
+      background-color: #2563eb;
+    }
+
+    .textcard {
+      h4 {
+        font-size: 1.05rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: 0.2rem;
+        color: #1a1a1a;
+      }
+
+      p {
+        font-size: 0.95rem;
+        font-family: 'Poppins', sans-serif;
+        color: #555;
+        margin: 0;
+      }
+    }
+  }
+
+  // cores específicas para cada tipo de card
+
+  &.doadores {
+    h3 {
+      color: #16A34A;
+    }
+  }
+
+  &.adquirentes {
+    h3 {
+      color: #2563EB;
+    }
+  }
+}
+
+
   // RESPONSIVIDADE 
 
 @media(max-width:768px){
@@ -228,6 +362,55 @@
       }
       p{
         font-size: 0.8rem;
+      }
+    }
+  }
+@media(max-width:768px){
+    .session3-comofunciona{
+      h2{
+        text-align: center;
+      }
+      .subtitulo {
+      font-size: 1.05rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      }
+      .cards-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      }
+
+      .card {
+      width: 100%;
+      max-width: 480px;
+      padding: 1.5rem;
+      text-align: left;
+      }
+
+      .card h3 {
+      font-size: 1.3rem;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      }
+
+      .itenscard {
+       .numbercard {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+       }
+
+       .textcard h4 {
+        font-size: 1rem;
+       }
+
+       .textcard p {
+        font-size: 0.9rem;
+       }
       }
     }
   }

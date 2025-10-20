@@ -165,6 +165,112 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.session3-comofunciona {
+  text-align: center;
+  padding: 4rem 8%;
+  background-color: #fff;
+}
+.session3-comofunciona h2 {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: start;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+.session3-comofunciona .subtitulo {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  text-align: start;
+  color: #555;
+  margin-bottom: 3rem;
+}
+.session3-comofunciona .cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #F3F5F8;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 481px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card h3 {
+  display: flex;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card h3 img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.6rem;
+}
+.card p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  margin-bottom: 1.8rem;
+}
+.card .itenscard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.card .itenscard .numbercard {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .itenscard .numbergreen {
+  background-color: #22c55e;
+}
+.card .itenscard .numberblue {
+  background-color: #2563eb;
+}
+.card .itenscard .textcard h4 {
+  font-size: 1.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #1a1a1a;
+}
+.card .itenscard .textcard p {
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+  margin: 0;
+}
+.card.doadores h3 {
+  color: #16A34A;
+}
+.card.adquirentes h3 {
+  color: #2563EB;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -203,4 +309,44 @@ nav ul li a:hover {
 }
 .session2 .item p {
   font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .session3-comofunciona h2 {
+    text-align: center;
+  }
+  .session3-comofunciona .subtitulo {
+    font-size: 1.05rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .session3-comofunciona .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .session3-comofunciona .card {
+    width: 100%;
+    max-width: 480px;
+    padding: 1.5rem;
+    text-align: left;
+  }
+  .session3-comofunciona .card h3 {
+    font-size: 1.3rem;
+  }
+  .session3-comofunciona .card h3 img {
+    width: 30px;
+    height: 30px;
+  }
+  .session3-comofunciona .itenscard .numbercard {
+    width: 24px;
+    height: 24px;
+    font-size: 0.8rem;
+  }
+  .session3-comofunciona .itenscard .textcard h4 {
+    font-size: 1rem;
+  }
+  .session3-comofunciona .itenscard .textcard p {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=style.css.map */
