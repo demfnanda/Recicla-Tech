@@ -352,15 +352,100 @@ nav ul li a:hover {
   background-color: #1ea653;
 }
 
+.depoimentos {
+  background-color: white;
+  text-align: center;
+  padding: 4rem 8%;
+}
+.depoimentos h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.depoimentos .subtitulo {
+  font-size: 1.2rem;
+  color: #4B5563;
+  margin-bottom: 3rem;
+  font-family: "Inter", sans-serif;
+}
+.depoimentos .depoimentos-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.depoimentos .depoimento-card {
+  background-color: #fff;
+  border: 1.5px solid #dfe3e8;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 320px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+.depoimentos .depoimento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+.depoimentos .depoimento-card .stars {
+  color: #facc15;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.depoimentos .depoimento-card .texto {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+.depoimentos .depoimento-card .usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.depoimentos .depoimento-card .usuario .icone {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.depoimentos .depoimento-card .usuario .icone img {
+  width: 39px;
+  height: 39px;
+}
+.depoimentos .depoimento-card .usuario .info-usuario h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+.depoimentos .depoimento-card .usuario .info-usuario p {
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  color: #6b7280;
+  margin: 0;
+}
 @media (max-width: 768px) {
-  .navbar {
+  .depoimentos .navbar {
     flex-direction: column;
   }
-  .navbar img {
+  .depoimentos .navbar img {
     max-width: 245px;
     height: 43px;
   }
 }
+
 @media (max-width: 768px) {
   .session1 {
     flex-direction: column;
@@ -452,5 +537,27 @@ nav ul li a:hover {
   .produtos-disponiveis .card {
     width: 100%;
     max-width: 360px;
+  }
+}
+@media (max-width: 768px) {
+  .depoimentos {
+    padding: 3rem 5%;
+  }
+  .depoimentos h2 {
+    font-size: 1.8rem;
+  }
+  .depoimentos .subtitulo {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .depoimentos .depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .depoimentos .depoimento-card {
+    width: 100%;
+    max-width: 370px;
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */
