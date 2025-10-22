@@ -438,6 +438,146 @@ nav ul li a:hover {
   margin: 0;
 }
 
+/* =========================
+   CTA SECTION
+========================= */
+.cta-section {
+  text-align: center;
+  background-color: #f8fafc;
+  padding: 60px 20px;
+}
+.cta-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.cta-section p {
+  font-size: 1.1rem;
+  color: #374151;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-family: "Inter", sans-serif;
+}
+.cta-section .cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.cta-section .cta-buttons a {
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+.cta-section .cta-buttons .btn-primary {
+  background-color: #16a34a;
+  color: #fff;
+}
+.cta-section .cta-buttons .btn-primary:hover {
+  background-color: #15803d;
+}
+.cta-section .cta-buttons .btn-secondary {
+  border: 1.5px solid #16a34a;
+  color: #16a34a;
+}
+.cta-section .cta-buttons .btn-secondary:hover {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  padding: 50px 20px 30px;
+}
+.footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer-container .footer-col h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #f9fafb;
+  font-family: "Poppins", sans-serif;
+}
+.footer .footer-container .footer-col p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  font-family: "Poppins", sans-serif;
+}
+.footer .footer-container .footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-container .footer-col ul li {
+  margin-bottom: 10px;
+}
+.footer .footer-container .footer-col ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: "Poppins", sans-serif;
+}
+.footer .footer-container .footer-col ul li a:hover {
+  color: #16a34a;
+}
+.footer .footer-container .footer-col .logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer .footer-container .footer-col .logo-footer img {
+  width: 150px;
+  height: 24px;
+}
+.footer .footer-container .footer-col .logo-footer span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #f9fafb;
+}
+.footer .footer-container .footer-col .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.footer .footer-container .footer-col .social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #374151;
+  color: #F3F5F8;
+  transition: background-color 0.2s;
+}
+.footer .footer-container .footer-col .social-icons a:hover {
+  background-color: #16A34A;
+}
+.footer .footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #374151;
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #F3F5F8;
+}
+.footer .footer-bottom .heart {
+  color: #16a34a;
+}
+
 @media (max-width: 768px) {
   /* ===== HEADER / NAVBAR ===== */
   .navbar {
@@ -741,5 +881,10 @@ nav ul li a:hover {
   .depoimentos .depoimento-card .usuario .info-usuario p {
     font-size: 0.85rem;
     color: #777;
+  }
+  /* ==== FOOTER ==== */
+  .footer .footer-bottom {
+    font-size: 0.7rem;
+    padding-top: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
